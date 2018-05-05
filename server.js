@@ -51,6 +51,13 @@ app.get('/about',(req,res)=>{
   });
 });
 
+app.get('/project',(req,res)=>{
+  res.render('project.hbs',{
+    header:'to Project Page',
+    Heading:'Here you are in my Project Page'
+  });
+});
+
 app.get('/contactus',(req,res)=>{
   res.send('Contact us Page');
 })
